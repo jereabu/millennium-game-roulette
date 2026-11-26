@@ -1,0 +1,27 @@
+[plugin]
+id = "game-roulette"
+name = "Game Roulette"
+version = "1.0.0"
+author = "Jeremias_Abulafia"
+description = "Spin a roulette over your installed Steam games, get a recommended session length and a suggestion for what to play next."
+
+[backend]
+entry = "backend/main.lua"
+sources = ["backend/**/*.lua"]
+
+[frontend]
+entry = "frontend/index.tsx"
+
+[compiler]
+# auto = detect the Millennium installation and install the plugin there
+output_path = "auto"
+
+[dev]
+auto_restart = true
+reload_steamui_when = "both"
+
+[logger]
+padding = 0
+backend_prefix  = "ROULETTE BCK"
+frontend_prefix = "ROULETTE FRT"
+webview_prefix  = "ROULETTE WEB"
