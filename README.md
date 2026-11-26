@@ -60,7 +60,7 @@ Requirements: Steam on Windows or Linux with [Millennium](https://steambrew.app)
 You'll need [Bun](https://bun.com) 1.0 or newer.
 
 ```powershell
-git clone https://github.com/<you>/millennium-game-roulette
+git clone https://github.com/jereabu/millennium-game-roulette
 cd millennium-game-roulette
 bun install
 bun run build
